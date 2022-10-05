@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE series SYSTEM "series.dtd">
+<series>
+	<author>
+		<name>Natalia</name>
+		<surname>Bielacka</surname>
+		<indexNumber>185497</indexNumber>
+	</author>
+	<favs name="Sherlock">
+		<seriesdescription>
+			In this modernized version of the Conan Doyle characters, using his detective plots, Sherlock Holmes lives in early 21st century London and acts more cocky towards Scotland Yard's detective inspector Lestrade because he's actually less confident. Doctor Watson is now a fairly young veteran of the Afghan war, less adoring and more active.
+		</seriesdescription>
+		<season number="1">
+			<description>
+				Series One deals with Dr John Watson meeting Sherlock Holmes, their developing friendship, and how they begin to investigate crimes together. John evolves from being a traumatised war veteran into a bit of a hero.
+				<episodes>
+					1.Study In Pink
+					2.The Blind Banker
+					3.The Great Game
+				</episodes>
+			</description>
+		</season>
+		<season number="2">
+			<description>
+				Series Two has some of Sherlock Holmes' most famous cases, and deals with the forging of the mighty Sherlock Holmes and his battle of wills with Jim Moriarty.
+			</description>
+		</season>
+		<season number="3">
+			<description>
+				This series deals with Sherlock's return and it is effect on his relationship with best friend, John Watson. We are also introduced to new character Mary Morstan and new villain, Charles Augustus Magnussen.
+			</description>
+		</season>
+		<season number="4">
+			<description>
+
+			</description>
+
+		</season>
+	</favs>
+	<favs name="The_Big_Bang_Theory" language="EN">
+		<seriesdescription>
+			Leonard Hofstadter and Sheldon Cooper are both brilliant physicists working at Cal Tech in Pasadena, California. They are colleagues, best friends, and roommates, although in all capacities their relationship is always tested primarily by Sheldon's regimented, deeply eccentric, and non-conventional ways. They are also friends with their Cal Tech colleagues mechanical engineer Howard Wolowitz and astrophysicist Rajesh Koothrappali. The foursome spend their time working on their individual work projects, playing video games, watching science-fiction movies, or reading comic books. As they are self-professed nerds, all have little or no luck with women. When Penny, a pretty woman and an aspiring actress from Omaha, moves into the apartment across the hall from Leonard and Sheldon's, Leonard has another aspiration in life, namely to get Penny to be his girlfriend.
+		</seriesdescription>
+	</favs>
+	<favs name="Black_Mirror">
+		<seriesdescription>
+			Set in a world only minutes from our own, "Black Mirror" unveils how modern technologies can backfire and be used against their makers, every episode set in a slightly different reality with different characters combating different types of technologies.
+		</seriesdescription>
+	</favs>
+	<popular>
+		<mostPopular name="Squid_Game" season="1">
+			<info>2021</info>
+			<info>Korean</info>
+		</mostPopular>
+		<mostPopular name="Bridgerton" season="1">
+			<story>
+				Wealth, lust, and betrayal set against the backdrop of Regency-era England, seen through the eyes of the powerful Bridgerton family.
+			</story>
+		</mostPopular>
+		<mostPopular name="Lupin" season="1">
+			<info>French</info>
+		</mostPopular>
+
+		<mostWatched>
+			142 82 76 76 67
+		</mostWatched>
+	</popular>
+	<information about="favs">
+		<links>
+			<link source="https://www.imdb.com/title/tt1475582/">More information about Sherlock</link>
+			<link source="https://www.imdb.com/title/tt0898266/?ref_=fn_al_tt_1">More information about The Big Bang Theory</link>
+			<link source="https://www.imdb.com/title/tt2085059/?ref_=fn_al_tt_1">More information about Black Mirror</link>
+		</links>
+		<media>
+			<image source="sherlock.jpg">Sherlock</image>
+			<image source="tbbt.jpg">The Big Bang Theory</image>
+			<image source="blackmirror.jpg">Black Mirror</image>
+		</media>
+	</information>
+</series>

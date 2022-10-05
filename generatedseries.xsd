@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="series">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="author">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" />
+							<xs:element name="surname" type="xs:string" />
+							<xs:element name="indexNumber" type="xs:unsignedInt" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" name="favs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="seriesdescription" type="xs:string" />
+							<xs:element minOccurs="0" maxOccurs="unbounded" name="season">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="description">
+											<xs:complexType mixed="true">
+												<xs:sequence minOccurs="0">
+													<xs:element name="episodes" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="number" type="xs:unsignedByte" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required" />
+						<xs:attribute name="language" type="xs:string" use="optional" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="popular">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="mostPopular">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="0" name="story" type="xs:string" />
+										<xs:element minOccurs="0" maxOccurs="unbounded" name="info" type="xs:string" />
+									</xs:sequence>
+									<xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="season" type="xs:unsignedByte" use="required" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="mostWatched" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="information">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="links">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="link">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="source" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="media">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="image">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="source" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="about" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

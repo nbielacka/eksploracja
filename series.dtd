@@ -1,0 +1,60 @@
+﻿
+<!ELEMENT series (author,favs+,popular,information)>
+
+
+<!ELEMENT author (name,surname,indexNumber)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT indexNumber (#PCDATA)>
+
+
+<!ELEMENT favs (seriesdescription,season*)>
+
+<!ENTITY % favseries "Sherlock | The_Big_Bang_Theory | Black_Mirror">
+<!ENTITY % mostpopular "Squid_Game | Bridgerton | Lupin">
+<!ENTITY % name "name (%favseries; | %mostpopular;) #REQUIRED">
+<!ATTLIST favs %name;>
+<!ATTLIST favs language CDATA "EN">
+
+<!ELEMENT seriesdescription (#PCDATA)>
+<!ELEMENT season (description)>
+<!ATTLIST season number CDATA #REQUIRED>
+
+<!ELEMENT description (#PCDATA|episodes)*>
+
+<!ELEMENT episodes (#PCDATA)>
+
+
+<!ELEMENT popular (mostPopular+,mostWatched)>
+
+<!ELEMENT mostPopular (info+|story)>
+
+<!ATTLIST mostPopular %name;>
+<!ATTLIST mostPopular season CDATA #IMPLIED>
+
+<!ELEMENT info (#PCDATA)>
+<!ELEMENT story (#PCDATA)>
+
+<!ELEMENT mostWatched (#PCDATA)>
+
+
+<!ELEMENT information (links,media)>
+
+<!ATTLIST information about CDATA #REQUIRED>
+
+<!ELEMENT links (link)*>
+<!ELEMENT link (#PCDATA)>
+
+<!ENTITY % source 'source CDATA #REQUIRED'>
+<!ATTLIST link %source;>
+
+<!ELEMENT media (image+)>
+
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image %source;>
+
+
+
+
+

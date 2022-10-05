@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>MY HOBBY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="series.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Survey</h1>
+
+        </header>
+
+        <div id="content">
+
+            <form action="/action.php">
+                Your name:
+                <input type="text" name="name" /><br /><br />
+                Please, select your age group: <br />
+
+                <input type="radio" name="age" id="first" value="first" />
+                <label for="first">-18</label>
+
+                <input type="radio" name="age" id="second" value="second" />
+                <label for="second">18-25</label>
+
+                <input type="radio" name="age" id="third" value="third" />
+                <label for="third">25-35</label>
+
+                <input type="radio" name="age" id="fourth" value="fourth" />
+                <label for="fourth">35-45</label>
+
+                <input type="radio" name="age" id="fifth" value="fifth" />
+                <label for="fifth">45-55</label>
+
+                <input type="radio" name="age" id="sixth" value="sixth" />
+                <label for="sixth">55+</label><br /><br />
+
+                Do you have an account in any of streaming services? <br />
+                <label for="yes">yes</label>
+                <input type="radio" name="service" id="yes" value="yes" checked />
+                <label for="no">no</label>
+                <input type="radio" name="service" id="no" value="no" /><br /><br />
+
+                How often do you watch tv shows?<br />
+
+                <input type="radio" name="time" id="everyday" value="everyday" />
+                <label for="everyday">everyday</label><br />
+
+                <input type="radio" name="time" id="few" value="few" />
+                <label for="few">few days a week</label><br />
+
+                <input type="radio" name="time" id="week" value="week" />
+                <label for="week">once a week</label><br />
+
+                <input type="radio" name="time" id="month" value="month" />
+                <label for="month">once a month</label><br />
+
+                <input type="radio" name="time" id="year" value="year" />
+                <label for="year">few times a year</label><br />
+
+                <input type="radio" name="time" id="never" value="never" />
+                <label for="never">I don't watch tv shows</label><br /><br />
+
+                What's your favourite kind of tv shows?<br />
+
+                <select name="kind" id="kind">
+                    <option value="0">Choose the kind</option>
+                    <option value="drama">Drama</option>
+                    <option value="sitcom">Sitcom / Comedy</option>
+                    <option value="reality">Reality TV / Game Show</option>
+                    <option value="animated">Animated Series</option>
+                    <option value="action">Action</option>
+                    <option value="crime">Crime</option>
+                    <option value="horror">Horror</option>
+                    <option value="sci-fi">Sci-fi</option>
+
+
+                </select><br /><br />
+
+                Which of the Netflix top 5 watched series have you seen?<br />
+
+                <input type="checkbox" name="Squid" value="squid" /> Squid Game
+                <input type="checkbox" name="bridgerton" value="bridgerton" /> Bridgerton
+                <input type="checkbox" name="lupin" value="lupin" /> Lupin
+                <input type="checkbox" name="witcher" value="witcher" /> The Witcher
+                <input type="checkbox" name="sex/life" value="sex/life" /> Sex/Life <br /><br />
+
+                What's your favourite TV show?<br />
+                <textarea rows="5" cols="50"></textarea><br /><br />
+
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" /><br />
+            </form>
+            <br /><br />
+
+            <svg width="300" height="200">
+                <defs>
+                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:orangered;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:darkred;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="300" height="200" fill="url(#grad)" style="stroke:lightgray;stroke-width:3"></rect>
+
+            </svg>
+
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="main.html">Main page</a>
+                    <ul><li><a href="https://www.imdb.com">More</a></li></ul>
+                </li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a class="active" href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer> Copyright 2021, Natalia Bielacka </footer>
+
+</body>
+</html>

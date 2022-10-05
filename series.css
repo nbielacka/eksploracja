@@ -1,0 +1,175 @@
+html, body {
+	background-color: dimgrey;
+	color: lightgray;
+	font-family:monospace,monospace,monospace;
+	padding: 0;
+	width: 100%;
+}
+h1{
+	color:darkred
+}
+h2{
+	color:lightgrey
+}
+h3{
+	color:lightgray
+}
+
+nav {	
+	width:20%; 
+	float:right; 
+}
+nav ul li {
+	list-style-type: circle; 
+	padding:0 0 0 10px;
+}
+footer { 
+	height:30px;
+	background:#000;
+	color:darkgrey;
+	text-align:center;
+	margin-top:10px;
+	padding:10x;
+}
+header { 
+	height:100px;	
+	background: #808080; 
+	margin: 0 0 10px 0; 
+	text-align: center;
+	
+}
+a {
+	text-decoration: none;
+}
+
+nav ul > li:hover  {			
+   background-color: grey;
+}
+nav ul > li:hover > a	{			
+	color: #002080;
+}
+nav ul li a.active{					
+	font-size:20pt;
+   background-color: grey;
+	color: darkred;
+}
+#content {						
+	width:75%; 
+	background: #C0C0C0; 
+	background-color: grey;
+	float:left; 
+	padding:1%; 
+	overflow:hidden; 
+	
+}
+
+
+#wrapper {						
+	width:90%;
+	overflow:hidden;
+	margin:0 auto;
+	min-height:calc(100% - 52px); 
+	padding:1%; 
+}
+
+
+
+
+table, th, td {
+	border: solid 3px lightgray;
+	
+	border-collapse: collapse;
+}
+th,td{
+	background-color: dimgrey;
+}
+
+
+
+p::first-letter{color:darkred; font-size:20pt;} 
+
+a:link {
+	color: darkgray;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: lightgray;
+	background-color: transparent;
+	text-decoration: wavy;
+}
+
+a:hover {
+	color: darkred;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+
+.container {
+	display: flex;
+	align-items: start;
+	justify-content: flex-start;
+}
+
+.image {
+	flex-basis: 60%
+}
+
+.image:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.text {
+	padding-left: 100px;
+}
+
+div.gallery {
+	margin: 6px;
+	border: 1px solid lightgray;
+	float: left;
+	width: 180px;
+}
+
+div.gallery:hover {
+		border: 1px solid gray;
+	}
+
+div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+div.desc {
+	padding: 17px;
+	text-align: center;
+}
+
+
+@keyframes animation{
+	0% {background-color: darkred;left:0px;}
+	25%{background-color: darksalmon;left:800px;}
+	50% {background-color: darkmagenta;left:0px;}
+	100% {background-color: darkorchid;left:800px;}
+}
+
+div.top{
+	opacity: 0.8;
+	width:100px;
+	height:30px;	
+	position:relative;
+	animation-name: animation;
+	animation-duration: 10s;
+}
+
+
+@media only screen and (max-width: 900px) {
+   nav {width:88%; position:absolute; height:50px;}
+   nav ul li {display: inline-table; }
+	nav ul li:after {content: " |";}
+   #content {width: 98%;position:relative; top: 60px;margin-top:5%;}
+	table {
+		display: none
+	}
+}
